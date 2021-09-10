@@ -52,10 +52,7 @@ function ContactForm() {
                             <input type="email" name="email" className="field-style field-split align-right" placeholder="Email" defaultValue={email} onBlur={handleChange} />
 
                         </li>
-                        {/* <li>
-                        <input type="text" name="field3" className="field-style field-split align-left" placeholder="Phone" />
-                        <input type="url" name="field4" className="field-style field-split align-right" placeholder="Website" />
-                    </li> */}
+                        
                         <li>
                             <input type="text" name="subject" className="field-style field-full align-none" placeholder="Subject" defaultValue={subject} onBlur={handleChange} />
                         </li>
