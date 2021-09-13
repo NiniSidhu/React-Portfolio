@@ -125,7 +125,10 @@ header nav ul li a:hover, footer a:hover {
 .content{
 	/* border: 1px solid red; */
 	width:200px;
-	margin: 10px;
+	margin-right: 10px;
+	padding: 1px;
+	background-color: white;
+	border: 1px solid black;
 }
 
 .active {

@@ -87,8 +87,10 @@ function Portfolio() {
                         <div className="portfolio" key={i}>
                             <img className="photo" src={require(`../assets/images/${project.image}`).default} alt={project.alt} />
                             <div className="content">
-                                <h2>{project.title}</h2>
+                                <p className="title">{project.title}</p>
+                                <br />
                                 <p>{project.description}<br /><span>{project.code}</span></p>
+                                <br />
                                 <a href={project.url} target="_blank" rel="noreferrer"><FontAwesomeIcon className="m-2" icon={faSafari} size = '2x'/></a>
                                 <a href={project.git} target="_blank" rel="noreferrer"><FontAwesomeIcon className="m-2" icon={faGithub} size = '2x'/></a>
                             </div>
