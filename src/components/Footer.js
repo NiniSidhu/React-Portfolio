@@ -1,28 +1,32 @@
 import React from 'react';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelopeSquare, fas, faMobileAlt, faEnvelope, faTree } from '@fortawesome/free-solid-svg-icons';
+import { library } from '@fortawesome/fontawesome-svg-core';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
+library.add(fas);
+
+library.add(fas, faEnvelopeSquare, faMobileAlt);
 
 function Footer() {
     return (
 
         <footer id="contact">
             <div>
-                <a href="mailto:nayandeepsidhu@gmail.com">
-                    <FontAwesomeIcon icon={["fas", "envelope-square"]} size="3x" color="#607d8b" />
+                <a href="mailto:nayandeepsidhu@gmail.com"><FontAwesomeIcon className="m-2" icon={faEnvelope} size = '2x'/>
                 </a>
             </div>
             <div>
-                <a href="https://github.com/NiniSidhu" target="_blank" rel="noreferrer">
-                    <FontAwesomeIcon icon={["fab", "git-square"]} size="3x" color="#607d8b" />
+                <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/nayan-sidhu-88b011b6/"><FontAwesomeIcon className="m-2" icon={faLinkedinIn} size = '2x'/>
                 </a>
             </div>
             <div>
-                <a href="https://www.linkedin.com/in/nayan-sidhu-88b011b6/" target="_blank" rel="noreferrer">
-                    <FontAwesomeIcon icon={["fab", "linkedin"]} size="3x" color="#607d8b" />
+                <a target="_blank" rel="noreferrer" href="https://github.com/NiniSidhu"><FontAwesomeIcon className="m-2" icon={faGithub} size = '2x'/>
                 </a>
             </div>
             <div>
-                <a href="https://linktr.ee/TheSidhuEstates" target="_blank" rel="noreferrer">
-                    <FontAwesomeIcon icon={["fab", "address-card"]} size="3x" color="#607d8b" />
+                <a target="_blank" rel="noreferrer" href="https://linktr.ee/TheSidhuEstates"><FontAwesomeIcon className="m-2" icon={faTree} size = '2x'/>
                 </a>
             </div>
         </footer>

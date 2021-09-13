@@ -8,9 +8,11 @@ function About() {
                     <img className="pic" src={require(`../assets/images/whatsappdp.jpg`).default} alt="Nayandeep Sidhu" />
                 </div>
                 <div className="text">
-                    <h2>Electrical Engineer and Full Stack Web Developer</h2>
+                    <h2 className="title">Electrical Engineer </h2> 
+                    <h2 className="title">&</h2>
+                    <h2 className="title">Full Stack Web Developer</h2>
                     <p className="mTopBottom">
-                        Electrical Engineer from University of Ottawa and Web Developer student in Full Stack Web Development from the University of Toronto. I am currently working as a Realtor in the Greater Toronto Area and am actively seeking oppertunities in Engineering and Web Development sector. 
+                        Electrical Engineer from the University of Ottawa and Web Developer student in Full Stack Web Development from the University of Toronto. I am currently working as a Realtor in the Greater Toronto Area and am actively seeking oppertunities in Engineering and Web Development sector. 
                     </p>
                     <p className="mTopBottom">
                         Developed skill set directly relevant to web development, including strong knowledge of HTML, CSS,

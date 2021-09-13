@@ -1,0 +1,277 @@
+@import url('reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@900&family=Nunito&display=swap');
+
+html{
+	scroll-behavior: smooth;
+}
+
+body {
+	background-image: url('../images/background.jpg');
+	color: #333;
+	background-color: yellow;
+	font-family: 'Montserrat', sans-serif;
+	font-size: .9em;
+}
+
+/* Utility Styles */
+
+.center {
+	text-align: center;
+}
+
+.mTop {
+	margin-top: 20px;
+}
+
+.mBottom {
+	margin-bottom: 20px;
+}
+
+.mLeft {
+	margin-left: 20px;
+}
+
+.mRight {
+	margin-right: 20px;
+}
+
+.mTopBottom {
+	margin: 20px 0;
+	justify-content:space-evenly;
+	color: #58564a;
+	text-shadow:  3px 3px 5px #58564a ;
+	letter-spacing: 1px;
+	font-family: 'Nunito', sans-serif;
+}
+
+.mLeftRight {
+	margin: 0 20px;
+	letter-spacing: 1px;
+	font-family: 'Nunito', sans-serif;
+}
+
+.mAll {
+	margin: 20px;
+	font-size: larger;
+}
+
+/* Header Styles */
+
+header {
+	padding: 20px 35px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	top: 0;
+	z-index: 9999;
+}
+
+header h1 {
+	color: black;
+	text-shadow: 1px 1px 1px #000, 3px 3px 5px #58564a ;
+	font-weight: bold;
+	font-family: 'Great Vibes', cursive;
+	font-size: 4.5vw;
+	margin: 0;
+	border-bottom: 3px solid black;
+	border-radius: 1%;
+}
+
+.title{
+	font-family: 'Cinzel', sans-serif;
+}
+
+header a {
+	text-decoration: none;
+}
+
+header nav {
+	display: flex;
+}
+
+header nav ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	list-style-type: none;
+}
+
+header nav ul li a, footer a {
+	padding: 3px 10px;
+	color: #58564a;
+	font-weight: lighter;
+	font-size: 1.5vw;
+	text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	margin: 0 5px;
+	border-bottom: 2px solid black;
+	letter-spacing: 3px;
+}
+
+header nav ul li a:hover, footer a:hover {
+	font-size: 1.6vw;
+	text-shadow: 1px 1px 1px #000, 3px 3px 5px #58564a ;
+}
+
+/* End Header Styles */
+
+.container {
+	max-width: 1330px;
+	margin: 0 auto;
+	padding-bottom: 100px;
+}
+
+
+.active {
+	color:black;
+	text-shadow: 1px 1px 1px #000, 3px 3px 5px #58564a ;
+}
+
+h2 {
+	font-size: 2vw;
+	font-weight: bold;
+}
+
+h3 {
+	font-size: 2vw;
+	font-weight: bold;
+}
+
+ul {
+	margin: 10px 0 10px 30px;
+	list-style: disc;
+	line-height: 20px;
+}
+
+.clr {
+	clear: both;
+}
+
+.main {
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: center;
+}
+
+.about, .resume {
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+	align-items: center;
+	justify-content: space-around;
+	margin: auto 0;
+	padding-top: 30px;
+}
+
+.resume {
+	align-content: flex-end;
+	align-items: flex-start;
+	justify-content: left;
+	padding-top: 10px;
+}
+
+.skillsList{
+	color: #58564a;
+	text-shadow:  3px 3px 5px #58564a ;
+	letter-spacing: 1px;
+	font-family: 'Nunito', sans-serif;
+}
+
+.about .text {
+	width: 500px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	padding: 10px 20px;
+}
+
+.about .pic img {
+	width: 350px;
+	border-radius: 10%;
+	border: 6px solid black;
+}
+
+
+/* Footer Styles */
+
+footer {
+
+	min-height: 50px;
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	color: black;
+	padding: 20px 0;
+	font-size: 1.5vw;
+	align-content: center;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+}
+
+/* End Footer Styles */
+
+/* MEDIA QUERY FOR SMALLER SCREENS */
+
+@media screen and (max-width: 1006px) {
+	header nav ul li a, footer, footer a {
+		font-size: 16px;
+	}
+	h2 {
+		font-size: 22px;
+	}
+	h3 {
+		font-size: 18px;
+	}
+}
+
+@media screen and (max-width: 676px) {
+	header {
+		justify-content: center;
+		position: relative;
+	}
+	header h1 {
+		width: 100%;
+		text-align: center;
+	}
+	header nav ul {
+		margin: 20px 0 10px 0;
+		width: 100%;
+		justify-content: center;
+	}
+	header nav ul li a, footer, footer a {
+		font-size: 16px;
+	}
+}
+
+@media screen and (max-width: 560px) {
+	header nav ul li a, footer, footer a {
+		font-size: 16px;
+	}
+	footer {
+		flex-flow: column;
+		position: relative;
+	}
+	footer div {
+		text-align: center;
+		padding: 15px;
+	}
+}
+
+@media screen and (max-width: 386px) {
+	header h1 {
+		font-size: 24px;
+	}
+	header nav ul li a, footer, footer a {
+		font-size: 14px;
+	}
+	footer, header nav ul {
+		flex-flow: column;
+		position: relative;
+	}
+	footer div, header nav ul li {
+		text-align: center;
+		padding: 10px;
+	}
+}
