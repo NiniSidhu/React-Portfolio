@@ -1,3 +1,46 @@
+# React Portfolio 
+
+## Author: Nayandeep Sidhu 
+
+### Description: 
+
+This is a professional portfolio that has been created using REACT. The project includes the use of multiple 3rd party APIs such as google fonts, icons to name a few. 
+
+### User Interface: 
+![image](https://user-images.githubusercontent.com/79432326/133178235-27b44adf-4b59-4243-bc25-a2d6c309d3a2.png)
+![image](https://user-images.githubusercontent.com/79432326/133178292-511f3e66-1d6a-4569-a3b9-5546e112b62d.png)
+![image](https://user-images.githubusercontent.com/79432326/133178323-2e749c4d-3304-4923-a3d8-b3f7502bf02d.png)
+
+
+
+Deployment Link: https://guarded-wildwood-97306.herokuapp.com/#about%20me
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
