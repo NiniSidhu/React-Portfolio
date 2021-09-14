@@ -1,7 +1,4 @@
 import React, { useState } from 'react';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { library } from '@fortawesome/fontawesome-svg-core';
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faSafari } from '@fortawesome/free-brands-svg-icons'
 
@@ -72,7 +69,57 @@ function Portfolio() {
             code: 'HTML, Advanced CSS, JS',
             url: 'https://ninisidhu.github.io/Taskmaster/',
             git: 'https://github.com/NiniSidhu/Taskmaster'
+        },
+        {
+            image: 'weather.png',
+           alt: 'Weather Dashboard',
+           title: 'Weather Dashboard',
+           description: 'Web application for a Weather application.',
+           code: 'HTML, CSS, API, JS,',
+           url: 'https://ninisidhu.github.io/Weather-Dashboard/',
+           git: 'https://github.com/NiniSidhu/Weather-Dashboard'
+       },
+       {
+        image: 'shahrukh.PNG',
+        alt: 'Client Portfolio',
+        title: 'Client Portfolio',
+        description: 'Web application for a client portfolio.',
+        code: 'HTML, CSS',
+        url: 'https://ninisidhu.github.io/Shahrukh/',
+        git: 'https://github.com/NiniSidhu/Shahrukh'
+        },
+        {
+            image: 'personal.PNG',
+            alt: 'Personal Portfolio',
+            title: 'Personal Portfolio',
+            description: 'Web application for a personal portfolio.',
+            code: 'HTML, CSS, JS',
+            url: 'https://ninisidhu.github.io/Nayandeep-Sidhu/#about',
+            git: 'https://github.com/NiniSidhu/Nayandeep-Sidhu'
+        },
+        {
+            image: 'windowshopper.png',
+            alt: 'Window Shopper',
+            title: 'Window Shopper',
+            description: 'Full Stack e-commerce web application',
+            code: 'HTML, CSS, JS, API, NPM, Express',
+            url: 'https://github.com/Gr0upFour/projectTwo',
+            git: 'https://github.com/Gr0upFour/projectTwo'
+        },
+        {
+            image: 'crunchtime.png',
+            alt: 'Crunch Time',
+            title: 'Crunch Time',
+            description: 'Front-end web application for fitness freaks!',
+            code: 'HTML, CSS, JS',
+            url: 'https://crunchteam04.github.io/Crunch-Time/',
+            git: 'https://github.com/crunchteam04/Crunch-Time'
         }
+
+
+
+
+
 
 
     ])
@@ -91,8 +138,8 @@ function Portfolio() {
                                 <br />
                                 <p>{project.description}<br /><span>{project.code}</span></p>
                                 <br />
-                                <a href={project.url} target="_blank" rel="noreferrer"><FontAwesomeIcon className="m-2" icon={faSafari} size = '2x'/></a>
-                                <a href={project.git} target="_blank" rel="noreferrer"><FontAwesomeIcon className="m-2" icon={faGithub} size = '2x'/></a>
+                                <a className="projectIcon" href={project.url} target="_blank" rel="noreferrer"><FontAwesomeIcon className="m-2" icon={faSafari} size = '2x'/></a>
+                                <a className="projectIcon" href={project.git} target="_blank" rel="noreferrer"><FontAwesomeIcon className="m-2" icon={faGithub} size = '2x'/></a>
                             </div>
                         </div>
                     )}

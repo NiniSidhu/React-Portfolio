@@ -56,6 +56,17 @@ body {
 	font-size: larger;
 }
 
+.projectIcon{
+	color:#58564a;
+	margin-right: 30px;
+	margin-left: 30px;
+}
+
+.projectIcon:hover{
+	font-size: 1.2vw;
+	color: black;
+}
+
 /* Header Styles */
 
 header {
